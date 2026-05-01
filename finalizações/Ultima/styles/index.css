@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url("../imagens/fundo_de_madeira.jpg") center top no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    color: #D66F00;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.582);
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header img {
+    height: 50px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    padding: 8px 15px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #000000;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #D66F00;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    background-color: #D66F00;
+    color: #1a0e00;
+    box-shadow: 0 0 8px #ff7b00;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 70px); /* Desconta a altura do header */
+}
+
+#player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.player-top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vinyl-record {
+    width: 300px;
+    height: 300px;
+}
+
+.osciloscopio-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#osciloscopio {
+    width: 100%;
+    height: 100%;
+}
+
+.player-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.botoes-controle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.botoes-controle button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #D66F00;
+    border: 1px solid #D66F00;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botoes-controle button:hover {
+    background-color: #D66F00;
+    color: #000;
+}
+
+.sliders-controle {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.timer, .gain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="range"] {
+    width: 100%;
+}

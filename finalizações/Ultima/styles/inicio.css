@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url("../imagens/fundo_de_madeira.jpg") center top no-repeat;
+    background-size: cover;
+    position: relative; /* Nescessário para o funcionamento do overlay*/
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+body::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.582); 
+    z-index: 0;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+main img{
+    width: 300px;
+}
+nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+nav a {
+  padding: 8px 0;
+  width: 120px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #000000; /* marrom escuro quase preto */
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #D66F00; /* laranja vibrante */
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #D66F00;
+  color: #1a0e00;
+  box-shadow: 0 0 8px #ff7b00;
+}
