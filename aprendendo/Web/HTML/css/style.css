@@ -1,0 +1,66 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+h1 {
+    font-size: 200%;
+    color: black;
+}
+h2{
+    color: white;
+    font-size: 200%;
+}
+h3{
+    font-size: 150%;
+}
+.box{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;/*faz ficar entre os cantos*/
+    align-items: space-between;
+    border-style: groove;
+    border-radius: 5px;
+}
+.box_left{
+    display: flex;
+    justify-content: space-between;/*faz ficar entre os cantos*/
+    align-items: space-between;
+    border-style: groove;
+    border-radius: 5px;
+} 
+.box img{
+    width: 100px;
+    height: 100px;
+}
+.fotos{
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    border-style: groove;
+    height: 205px;
+    border-radius: 5px;
+}
+.fotos img{
+    height: 200px;
+    width: 200px;
+    border-style: groove;
+    border-radius: 5px;
+}
+.vids{
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    border-style: groove;
+    height: 205px;
+    border-radius: 5px;
+}
+.vids video{
+    height: 200px;
+    width: 400px;
+}
+.roda_pe{
+    background-color: black;
+    width: 100%;
+    left: 0px;
+    bottom: 0;
+}
