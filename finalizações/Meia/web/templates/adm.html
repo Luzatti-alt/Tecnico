@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/adm.css') }}">
+  <title>administração brisk</title>
+</head>
+<body>
+  <div class="cabecario">
+    <div class="home">
+      <a href="{{ url_for('home') }}" style="color:black">retornar</a>    </div>
+    <div class="user">
+      <h3>bem vindo: usuario</h3>
+    </div>
+  </div> <!-- fecha cabecario -->
+  <h2 style="color:white">Estoque materiais:</h2>
+  <center>
+    <div class="adm_infos">
+      <ul>
+        {% for cor in Cores %}
+    <li>{{ cor.cor }} - {{ cor.quantidade_cor_kg }} kg {% if cor.disponivel %}- Disponível{% else %}- Indisponível{% endif %}</li>
+{% else %}
+    <li>Nenhuma cor de fio cadastrada.</li>
+{% endfor %}
+    </ul>
+    </div>
+    <h2 style="color:white">Estoque produtos:</h2>
+    <div class="adm_infos">
+      temporario ver como fazer
+      aparecer o db dos produtos aqui
+    </div>
+    <br>
+    <h2 style="color:white">Controle do sistema:</h2>
+    <div class="adm_infos">
+      <button class="atualizar_cor">atualizar cor</button>
+      <button class="adicionar_cor">adicionar cor</button>
+      <button class="remover_cor">remover cor</button>
+      <button class="produzir_meia">produzir meia</button>
+    </div>
+  </center>
+  <center>
+    <div class="adm_controle">
+    <input type="text" class="entrada">
+    <button class="botao">enviar</button>
+  </div>
+  </center
+</body>
+</html>

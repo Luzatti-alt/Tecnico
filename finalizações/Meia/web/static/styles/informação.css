@@ -1,0 +1,138 @@
+header{
+  position: fixed;
+   top: 0;
+  left: 0;
+  width: 100%;   /* ocupa toda a largura */
+  background: #2a9baa;
+  color: white;
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
+}
+body{
+  background: #ffffff;
+  color: white;
+}
+.cabecario{
+  background: #2a9baa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100dvh;
+}
+.home {
+  border-style: groove;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 15px;
+  width: 50px;
+  height: 15px;
+}
+.user_info {
+  border-style: groove;
+  border-radius: 15px;
+  width: 60%;
+  display: flex;              /* coloca imagem e texto lado a lado */
+  align-items: flex-start;        /* centraliza verticalmente */
+  background: lightgray;
+  padding: 20px;
+  gap: 20px;                  /* espaço entre imagem e texto */
+}
+.foto {
+  width: 80px;                /* tamanho fixo do círculo */
+  height: 80px;
+  border-radius: 50%;         /* deixa redondo */
+  overflow: hidden;           /* corta a imagem fora do círculo */
+  background: white;          /* fundo branco */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.foto img {
+  width: 100%;                /* imagem ocupa o círculo */
+  height: 100%;
+  object-fit: cover;          /* corta para caber bem */
+}
+.dados_user {
+  flex: 1;                    /* ocupa o resto do espaço */
+  font-size: 20px;            /* texto mais legível */
+  color: black;
+}
+.nome{
+  font-size: 150%;
+}
+.nome_box{
+  display: inline-block;     
+  padding: 20px 15px;         
+  margin: 5px 0;               
+  border: 1px solid #ccc;   
+  border-radius: 8px;          
+  background: #ffffff;         
+  color: #333; 
+  font-size: 16px;          
+  min-width: 400px;            
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.email{
+  font-size: 150%;
+}
+.email_box{
+  display: inline-block;     
+  padding: 20px 15px;         
+  margin: 5px 0;               
+  border: 1px solid #ccc;   
+  border-radius: 8px;          
+  background: #ffffff;         
+  color: #333; 
+  font-size: 16px;          
+  min-width: 400px;            
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.endereço{
+  font-size: 150%;
+}
+.endereço_box{
+  display: inline-block;     
+  padding: 20px 15px;         
+  margin: 5px 0;               
+  border: 1px solid #ccc;   
+  border-radius: 8px;          
+  background: #ffffff;         
+  color: #333; 
+  font-size: 16px;          
+  min-width: 400px;            
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+.tel{
+  font-size: 150%;
+}
+.tel_box{
+  display: inline-block;     
+  padding: 20px 15px;         
+  margin: 5px 0;               
+  border: 1px solid #ccc;   
+  border-radius: 8px;          
+  background: #ffffff;         
+  color: #333; 
+  font-size: 16px;          
+  min-width: 400px;            
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+.adm {
+  position: fixed;
+   top: 0;
+  right: 0;
+  border-style: groove;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: white;
+  width: 150px;
+  height: 15px;
+}

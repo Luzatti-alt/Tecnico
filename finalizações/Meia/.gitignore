@@ -1,0 +1,5 @@
+.env
+Meia_controle_fios.db
+pycache/
+__pycache__/
+.vscode/

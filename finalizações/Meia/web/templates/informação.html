@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Informação usuario</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/informação.css') }}">
+
+</head>
+<body>
+  <header>
+    <div class="cabecario">
+    <div class="home">
+      <a href="{{ url_for('home') }}" style="color:black">retornar</a>
+    </div>
+    <a class="adm" href="{{ url_for('adm') }}">adm</a>
+  </div>
+  </header>
+  <h2>inforações do usuario</h2>
+  <center>
+    <div class="user_info">
+  <div class="foto">
+    <img src="../static/imagens/user.svg" alt="foto usuario">
+  </div>
+  <div class="dados_user">
+    <div class="nome">
+      nome:
+      <br>
+      <div class="nome_box">
+      </div>
+      </div>
+      <div class="email">
+      email:
+      <br>
+      <div class="email_box">
+      </div>
+      </div>
+      <div class="endereço">
+      endereço:
+      <br>
+      <div class="endereço_box">
+      </div>
+      </div>
+      <div class="tel">
+      telefone:
+      <br>
+      <div class="tel_box">
+      </div>
+      </div>
+  </div>
+</div>    
+  </center>
+</body>
+</html>
